@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div id="review-list">
+            <!-- Reviews will be displayed here -->
+        </div>
+        <form id="review-form">
+            <h3>Leave a Review</h3>
+            <input type="text" id="reviewer-name" placeholder="Your Name" required />
+            <textarea id="review-text" placeholder="Write your review..." required></textarea>
+            <label for="review-rating">Rating:</label>
+            <select id="review-rating">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+            </select>
+            <div id="star-rating" class="rating">
+                <span class="star" data-value="1"></span>
+                <span class="star" data-value="2"></span>
+                <span class="star" data-value="3"></span>
+                <span class="star" data-value="4"></span>
+                <span class="star" data-value="5"></span>
+            </div>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

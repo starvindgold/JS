@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    padding: 0px 20px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header .left, 
+.header .middle, 
+.header .right {
+    display: flex;
+    align-items: center;
+}
+
+.header .left img {
+    height: 100%;
+    width: auto; /* Maintain aspect ratio */
+    max-height: 60px; /* Set a reasonable max height */
+}
+
+/* Navigation Menu */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+    /* Fallback color for unsupported browsers */
+    background-color: #e3f9ff; 
+    background: linear-gradient(45deg, #e3f9ff, #ffffff);
+    
+    /* Subtle default shadow */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* Hover Effect */
+.nav ul li a:hover {
+    background: linear-gradient(45deg, #c4f4fe, #89e0f7);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Right Section - Buttons */
+.header .right {
+    display: flex;
+    gap: 12px;
+}
+
+.right .btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Book Demo Button */
+.right .book-demo {
+    background: linear-gradient(45deg, #89e0f7, #5ab9e4);
+}
+
+/* Buy Now Button */
+.right .buy-now {
+    background: linear-gradient(45deg, #5ab9e4, #3b8ed9);
+}
+
+/* Hover Effect */
+.right .btn:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+/* Page Layout */
+.page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: calc(100vh - 100px);
+    padding: 80px 20px 60px;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Cards */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #555;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.7em;
+}
