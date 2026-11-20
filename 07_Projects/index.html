@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Projects</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html" class="active">Home</a>
+    </nav>
+
+    <div id="wrapper">
+        <h1>JavaScript Projects</h1>
+        <p>Select a project below to open it.</p>
+
+        <div class="projects-list">
+            <a href="./1_color_switcher/index.html" class="project-card">
+                <span class="project-num">01</span>
+                <div class="project-info">
+                    <h2>Color Switcher</h2>
+                    <p>Change background colors dynamically on click</p>
+                </div>
+            </a>
+
+            <a href="./2_bmi_calculator/index.html" class="project-card">
+                <span class="project-num">02</span>
+                <div class="project-info">
+                    <h2>BMI Calculator</h2>
+                    <p>Calculate Body Mass Index from height & weight</p>
+                </div>
+            </a>
+
+            <a href="./3_digital_clock/index.html" class="project-card">
+                <span class="project-num">03</span>
+                <div class="project-info">
+                    <h2>Digital Clock</h2>
+                    <p>Live local time updated every second</p>
+                </div>
+            </a>
+
+            <a href="./4_guess_the_number/index.html" class="project-card">
+                <span class="project-num">04</span>
+                <div class="project-info">
+                    <h2>Guess The Number</h2>
+                    <p>Number guessing game with attempt tracking</p>
+                </div>
+            </a>
+        </div>
+
+        <p class="last-visited" id="lastVisited"></p>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
